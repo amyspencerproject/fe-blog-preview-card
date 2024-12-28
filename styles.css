@@ -75,7 +75,49 @@ select {
 }
 
 /* ========================= Base Styles ========================= */
+body {
+  background-color: hsl(47, 88%, 63%);
+  font-family: "Figtree", serif;
+}
 
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  border: hsl(0, 0%, 7%) solid 1px;
+  border-radius: 20px;
+  background-color: hsl(0, 0%, 100%);
+  width: 20rem;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: flex-start;
+
+  margin-top: 3rem;
+  box-shadow: 8px 8px hsl(0, 0%, 7%);
+
+  padding-left: 1rem;
+}
+
+.card-image {
+  border-radius: 10px;
+  /* margin: 3rem; */
+  width: 80%;
+}
+
+.card-tag {
+  background-color: hsl(47, 88%, 63%);
+  border-radius: 5px;
+  font-weight: bold;
+  padding: 0.5rem 0.75rem;
+}
+
+.card-text {
+  color: hsl(0, 0%, 42%);
+}
 /* ========== Footer ========== */
 
 footer {
