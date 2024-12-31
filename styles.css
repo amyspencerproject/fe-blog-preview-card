@@ -83,7 +83,7 @@ body {
 main {
   display: flex;
   justify-content: center;
-  align-items: center;
+  /* align-items: center; */
 }
 
 .card {
@@ -91,32 +91,69 @@ main {
   border-radius: 20px;
   background-color: hsl(0, 0%, 100%);
   width: 20rem;
+
   display: flex;
-  flex-flow: column wrap;
-  justify-content: center;
-  align-items: flex-start;
+  flex-flow: column nowrap;
+  align-items: center;
 
   margin-top: 3rem;
   box-shadow: 8px 8px hsl(0, 0%, 7%);
+}
 
-  padding-left: 1rem;
+.card-content {
+  display: flex;
+  flex-flow: column;
+  align-items: flex-start;
+  margin: 0 1rem 1rem 1rem;
+}
+
+.card-author {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  font-weight: 800;
+  font-size: 0.875rem;
+  padding: 0.5rem 0;
+  margin-top: 1rem;
+}
+
+.card-author-image {
+  width: 32px;
+  height: 32px;
+  margin-right: 1rem;
 }
 
 .card-image {
   border-radius: 10px;
-  /* margin: 3rem; */
-  width: 80%;
+  margin: 1rem 0;
+  width: 90%;
 }
 
 .card-tag {
   background-color: hsl(47, 88%, 63%);
   border-radius: 5px;
-  font-weight: bold;
-  padding: 0.5rem 0.75rem;
+  font-weight: 800;
+  font-size: 0.75rem;
+  padding: 0.25rem 0.75rem;
+  margin: 0.75rem 0;
 }
 
 .card-text {
   color: hsl(0, 0%, 42%);
+  font-size: 0.875rem;
+}
+
+.card-publish-date {
+  font-size: 0.75rem;
+}
+
+.card-title:hover {
+  color: hsl(47, 88%, 63%);
+}
+
+.card-title {
+  font-size: 1.25rem;
+  margin: 1rem 0;
 }
 /* ========== Footer ========== */
 
@@ -129,11 +166,15 @@ footer {
 }
 
 footer p {
-  color: var(--light-lavender);
-  font-size: 0.825rem;
+  color: #6b6b6b;
+  font-size: 0.75rem;
 }
 
 footer a {
-  text-decoration: none;
-  color: var(--gradient-circle-1);
+  /* text-decoration: none; */
+  color: #6b6b6b;
+}
+
+footer a:hover {
+  color: hsl(0, 0%, 7%);
 }
