@@ -83,14 +83,13 @@ body {
 main {
   display: flex;
   justify-content: center;
-  /* align-items: center; */
 }
 
 .card {
   border: hsl(0, 0%, 7%) solid 1px;
   border-radius: 20px;
   background-color: hsl(0, 0%, 100%);
-  width: 20rem;
+  max-width: 20rem;
 
   display: flex;
   flex-flow: column nowrap;
@@ -118,8 +117,7 @@ main {
 }
 
 .card-author-image {
-  width: 32px;
-  height: 32px;
+  max-width: 32px;
   margin-right: 1rem;
 }
 
