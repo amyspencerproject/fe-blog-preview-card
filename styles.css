@@ -78,6 +78,8 @@ select {
 body {
   background-color: hsl(47, 88%, 63%);
   font-family: "Figtree", serif;
+  display: grid;
+  place-content: center;
 }
 
 main {
@@ -143,6 +145,7 @@ main {
 
 .card-publish-date {
   font-size: 0.75rem;
+  color: hsl(0, 0%, 7%);
 }
 
 .card-title:hover {
